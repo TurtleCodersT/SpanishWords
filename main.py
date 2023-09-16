@@ -1,0 +1,1 @@
+list = ["Spanish", "Espanol", "Red", "Rojo", "Hello", "Hola", "Good Morning", "Buenos Dias", "How are you", "Como Estas", "Good Afternoon", "Buenos Tardes", "Good Evening", "Buenos Noches", "Orange", "Naranja", "Green", "Verde", "Blue", "Azul", "Purple", "Morado", "Brown", "Cafe", "White", "Blanco", "Mexico", "Mexicano", "Spring", "Primavera", "Summer", "Verano", ""]
