@@ -8,13 +8,7 @@ while Newcard:
     #First Word Get Chosen
     numbertochosefrom = len(SpanishWords) - 2
     #Finding length of list to generate random number subtracting two for index starting at zero and not getting the last number in the list
-    WordChosen = random.randint(0, numbertochosefrom)
-    if WordChosen % 2 != 0:
-        while True:
-            numbertochosefrom = len(SpanishWords) - 2
-            WordChosen = random.randint(0, numbertochosefrom)
-            if WordChosen % 2 == 0:
-                continue
+    WordChosen = random.randrange(0, numbertochosefrom, 2)
     print(SpanishWords[WordChosen])
     Totalnumberofquestion += 1
     Guess = input("Enter what you think the translation of the word is.")
@@ -26,7 +20,7 @@ while Newcard:
     print(f"The correct answer is {SpanishWords[WordChosen + 1]}")
     NextCard = input("Type Q is you would like to end and get your score. Type enter to continue playing").lower()
     if NextCard == "q":
-        print(f"Okay Bye! You got {score}/{Totalnumberofquestion}s right.")
+        print(f"Okay Bye! You got {score}/{Totalnumberofquestion} questions right.")
         Newcard = False
         quit()
 
